@@ -10,6 +10,47 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+		  /* Table Styling */
+		  .pr-table {
+		    margin-top: 1rem;
+		    background: white;
+		    padding: 1.5rem;
+		    border-radius: 8px;
+		    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		  }
+		
+		  .pr-table table {
+		    width: 100%;
+		    border-collapse: collapse;
+		    margin-top: 0.5rem;
+		  }
+		
+		  .pr-table th, 
+		  .pr-table td {
+		    padding: 0.75rem;
+		    text-align: left;
+		    border-bottom: 1px solid #eee;
+		  }
+		
+		  .pr-table th {
+		    background: #f8f9fa;
+		    font-family: 'Roboto Condensed', sans-serif;
+		    text-transform: uppercase;
+		    font-size: 0.8rem;
+		    letter-spacing: 1px;
+		    color: #555;
+		  }
+		
+		  .pr-table tr:hover td {
+		    background: #f5f5f5;
+		  }
+		
+		  /* Editorial Template Integration */
+		  details[open] summary {
+		    margin-bottom: 1rem;
+		  }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -64,17 +105,40 @@
 									        <h3>Weightlifting/Calisthenics</h3>
 									        <p>I do weightlighting and calisthenics to stay fit and pour out the stress in life:)</p>
 										<ul class="actions">
-											<li>
-												<details>
-											    	<summary class="button">More</summary>
-											    	<p>Current PRs:</p>
-												<ul class="alt">
-													<li>Deadlift: 405 lbs</li>
-													<li>Squats: 315 lbs</li>
-													<li>Bench Press: 190 lbs</li>
-												</ul>
-											  	</details>
-											</li>
+										  <li>
+										    <details>
+										      <summary class="button">More</summary>
+										      <div class="pr-table">
+										        <h4>Current PRs</h4>
+										        <table>
+										          <thead>
+										            <tr>
+										              <th>Exercise</th>
+										              <th>Weight</th>
+										              <th>Date</th>
+										            </tr>
+										          </thead>
+										          <tbody>
+										            <tr>
+										              <td>Deadlift</td>
+										              <td>405 lbs</td>
+										              <td>Jun 2024</td>
+										            </tr>
+										            <tr>
+										              <td>Squats</td>
+										              <td>315 lbs</td>
+										              <td>May 2024</td>
+										            </tr>
+										            <tr>
+										              <td>Bench Press</td>
+										              <td>190 lbs</td>
+										              <td>Apr 2024</td>
+										            </tr>
+										          </tbody>
+										        </table>
+										      </div>
+										    </details>
+										  </li>
 										</ul>
 									      </div>
 									    </article>
